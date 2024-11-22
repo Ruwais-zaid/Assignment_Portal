@@ -4,7 +4,7 @@ import UserControllers from "../controllers/UserControllers.js";
 import authMiddleware from "../middleware/userauth.js";
 import adminMiddleware from "../middleware/adminauth.js";
 import { Router } from "express";
-import {authorize} from "../utils/authorize.js";
+import {authorize} from "../utils/RoleBasedMiddleware.js";
 
 const routes  = Router();
 
